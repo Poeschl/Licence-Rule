@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+group 'xyz.poeschl.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.9.1'
+}
