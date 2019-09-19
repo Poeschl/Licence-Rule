@@ -19,8 +19,10 @@ apply plugin: 'eclipse'
 sourceCompatibility = JavaVersion.VERSION_12
 
 import com.github.jk1.license.render.InventoryHtmlReportRenderer
+import com.github.jk1.license.filter.LicenseBundleNormalizer
 licenseReport {
     renderers = [new InventoryHtmlReportRenderer()]
+    filters = [new LicenseBundleNormalizer(bundlePath: "$projectDir/config/license-normalizer-bundle.json")]
 }
 
 repositories {
