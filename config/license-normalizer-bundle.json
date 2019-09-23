@@ -32,7 +32,7 @@
     },
     {
       "bundleName": "CDDL-1.0",
-      "licenseName": "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL), Version 1.0",
+      "licenseName": "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0",
       "licenseUrl": "https://oss.oracle.com/licenses/CDDL"
     },
     {
@@ -177,10 +177,26 @@
       "licenseFileContentPattern": ".*CDDL.*1\\.0"
     },
     {
+      "bundleName": "CDDL-1.0",
+      "licenseNamePattern": "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE( \\(CDDL\\),?)? [v|V](ersion )?1\\.0"
+    },
+    {
+      "bundleName": "CDDL-1.0",
+      "licenseNamePattern": "Common Development and Distribution License( \\(CDDL\\),?)? [v|V](ersion )?1\\.0"
+    },
+    {
+      "bundleName": "CDDL-1.1",
+      "licenseNamePattern": "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE( \\(CDDL\\),?)? [v|V](ersion )?1\\.1"
+    },
+    {
+      "bundleName": "CDDL-1.1",
+      "licenseNamePattern": "Common Development and Distribution License( \\(CDDL\\),?)? [v|V](ersion )?1\\.1"
+    },
+    {
       "bundleName": "BSD-3-Clause",
       "licenseNamePattern": "BSD[ |-]3-[c|C]lause.*"
     },
-     {
+    {
       "bundleName": "BSD-3-Clause",
       "licenseUrlPattern": ".*(www\\.)?opensource\\.org/licenses/BSD-3-Clause"
     },
