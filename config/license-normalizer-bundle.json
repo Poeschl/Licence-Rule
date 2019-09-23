@@ -11,6 +11,11 @@
       "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0"
     },
     {
+      "bundleName": "0BSD",
+      "licenseName": "BSD Zero Clause License",
+      "licenseUrl": "https://opensource.org/licenses/0BSD"
+    },
+    {
       "bundleName": "BSD-2-Clause",
       "licenseName": "The 2-Clause BSD License",
       "licenseUrl": "https://opensource.org/licenses/BSD-2-Clause"
@@ -108,16 +113,40 @@
   ],
   "transformationRules": [
     {
+      "bundleName": "0BSD",
+      "licenseNamePattern": "BSD Zero Clause License"
+    },
+    {
+      "bundleName": "0BSD",
+      "licenseNamePattern": "BSD$"
+    },
+    {
+      "bundleName": "0BSD",
+      "licenseNamePattern": "BSD[ |-][c|C]lause.*",
+    },
+    {
+      "bundleName": "0BSD",
+      "licenseNamePattern": "BSD[ |-][l|L]icense.*"
+    },
+    {
       "bundleName": "Apache-2.0",
       "licenseNamePattern": ".*The Apache Software License, Version 2\\.0.*"
     },
     {
       "bundleName": "Apache-2.0",
-      "licenseNamePattern": "Apache 2.*"
+      "licenseNamePattern": "Apache[ |-|_]2.*"
     },
     {
       "bundleName": "Apache-2.0",
       "licenseNamePattern": "ASL 2\\.0"
+    },
+    {
+      "bundleName": "Apache-2.0",
+      "licenseNamePattern": ".*Apache License,?( Version)? 2.*"
+    },
+    {
+      "bundleName": "Apache-2.0",
+      "licenseUrlPattern": ".*(www\\.)?opensource\\.org/licenses/Apache-2\\.0.*"
     },
     {
       "bundleName": "Apache-2.0",
@@ -146,6 +175,10 @@
     {
       "bundleName": "BSD-3-Clause",
       "licenseNamePattern": "BSD[ |-]3-[c|C]lause.*"
+    },
+    {
+      "bundleName": "BSD-3-Clause",
+      "licenseUrlPattern": ".*(www\\.)?opensource\\.org/licenses/BSD-3-Clause"
     },
     {
       "bundleName": "BSD-2-Clause",
